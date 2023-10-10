@@ -22,4 +22,4 @@ def detail(request,item_id):
     context ={
         'item':item,
     }
-    return HttpResponse('This is an item no/id: %' % item_id)
+    return render(request,'food/detail.html', context)
